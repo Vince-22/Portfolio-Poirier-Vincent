@@ -2,9 +2,14 @@ body{
     background-color: slategray;
 }
 .entete{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FFD034;
     height: 500px;
     width: 80%;
     margin-left: 20%;
     background-color: #06327D;
+}
+#Meconcernant{
+    background-color: black;
+    padding:5px ;
 }

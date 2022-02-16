@@ -1,5 +1,10 @@
-body{
-    background-color: rgb(224, 237, 251);
+.contact a{
+    color: black;
+    text-decoration: none;
+    
+}
+.cont :hover{
+   color: #FFD034;
 }
 .menu{
     list-style: none;
@@ -30,7 +35,7 @@ body{
     margin-left: 20%;
     background-color: #06327D;
 }
-#Meconcernant{
+.meconcernant{
     background-color: black;
     padding:5px ;
 }

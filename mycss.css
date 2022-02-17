@@ -1,10 +1,12 @@
-.contact a{
-    color: black;
-    text-decoration: none;
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
-.cont :hover{
-   color: #FFD034;
+/* css menu---------*/
+.navbar{
+    position: -webkit-sticky;
+position: sticky;
+top: 2px;
 }
 .menu{
     list-style: none;
@@ -12,7 +14,7 @@
     color: #FFD034;
     margin-right: 20px;
     border-radius: 5px;
-    padding: 2px;
+    padding: 1px;
 }
 .menuglobale{
     border-bottom-left-radius: 3px;
@@ -27,21 +29,64 @@
     background-color: #FFD034;
     color: #06327D;
 }
+/* css description---------------- */
+.photo{
+    margin-top: 50%;
+    margin-right: 50%;
+    width: 80%;
+    height: auto;
+}
 .entete{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:start;
+    border-radius: 5px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     color: #FFD034;
-    height: 500px;
+    height: auto;
     width: 80%;
     margin-left: 20%;
     background-color: #06327D;
+}
+.entete p {
+    font-size: 30px ;
+    margin-left: 10px;
+}
+.entete span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#stage{
+    font-size: 25px;
+}
+.presentation{
+    height: auto;
 }
 .meconcernant{
     background-color: black;
     padding:5px ;
 }
+
+/* css contact -----------*/
+
+.contact h2 {
+    margin-left: 100px;
+}
 li{
     list-style: none;
 }
+.contact a{
+    color: black;
+    text-decoration: none;   
+}
+h2{
+    text-decoration: underline;
+}
+.txtcont li {
+    margin-bottom: 3px;
+}
+.cont :hover{
+   color: #FFD034;
+}
+/* css competences -----------*/
 
 .Nomcompetance{
     align-items: center;

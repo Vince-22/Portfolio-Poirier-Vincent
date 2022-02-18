@@ -37,8 +37,7 @@ top : 0.1px
 }
 /* css description---------------- */
 .photo{
-    margin-top: 50%;
-    margin-right: 50%;
+    margin: 50px;
     width: 80%;
     height: auto;
 }

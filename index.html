@@ -15,11 +15,12 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/dev-icon-6.png" alt="" />
-        </div>
         <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
+            <div class="row">
+                
+            <span class="hamburger col "> </span>
+            </div>
+            
         </button>
         <nav class="nav">
             <ul class="nav__list">
@@ -46,72 +47,45 @@
             </div>
         </div>
     </header>
-    <!-- <nav class="navbar navbar-expand-lg menuglobale ">
-        <div class="navbar row ">
-        <div class="col-sm-2 ">
-          <a class="navbar-brand menu p-1" href="#contact">Contact</a>
-        </div>
-        <div class="col-sm-2">
-          <a class="navbar-brand menu p-1" href="#experience">Experience</a>
-        </div>
-        <div class="col-sm-2 ">
-          <a class="navbar-brand menu p-1" href="#formation">Formation</a>
-        </div>
-        <div class="col-sm-2 ">
-          <a class="navbar-brand menu p-1" href="#competances">Competences</a>
-        </div>
-        <div class="col-sm-2 ">
-          <a class="navbar-brand menu p-1" href="#projetPerso">Projets</a>
-        </div>
-    </div>
-      </nav> -->
-            
-        
-    
-        <div class="contact col-md-6" id="contact" tabindex='1'>
-            <h2>Contact</h2>
-            <div class="row">
-                <div class="col-1 logo">
-                    <ul>
-                  <li class="cont "><img src="https://img.icons8.com/ios-filled/25/FFD034/apple-mail.png"/>  </li>
-                  <li><img src="https://img.icons8.com/ios-filled/25/FFD034/apple-phone.png"></li>
-                  <li><img src="https://img.icons8.com/ios-filled/25/FFD034/marker.png"/></li>
-                  <li class="cont" ><img src="https://img.icons8.com/ios-filled/25/FFD034/github.png"/>  </li>
-                  <li class="cont"><img src="https://img.icons8.com/ios-filled/25/FFD034/linkedin-circled--v4.png"/></li>
-                </ul>
-            </div>
-            <div class="col-10 txtcont">
+        <div class="contact col-md-6 " id="contact" tabindex='1'>
+            <div class="row justify-content-end">
+                <div class="col-10 txtcont">
+                <h2><strong>Contact</strong> </h2>
                 <ul >
-                    <li><a href="mailto:vincent.poirier2245@gmail.com">vincent.poirier2245@gmail.com</a></li>
-                    <li>0635105514</li>
-                    <li>21 rue du clos thibault 45340 beaune la rolande</li>
-                    <li><a href="http://github.com/Vince-22/Epifleurs.git">https://github.com/Vince-22/Epifleurs.git</a></li>
-                    <li><a href="http://linkedin.com/in/poirier-vincent-a701b81a8">Poirier Vincent</a></li>
+                    <li class="cont "><img src="https://img.icons8.com/ios-filled/50/FFD034/apple-mail.png"/> <a href="mailto:vincent.poirier2245@gmail.com">     vincent.poirier2245@gmail.com</a></li>
+                    <li><img src="https://img.icons8.com/ios-filled/50/FFD034/apple-phone.png">     0635105514</li>
+                    <li><img src="https://img.icons8.com/ios-filled/50/FFD034/marker.png"/>     21 rue du clos thibault 45340 beaune la rolande</li>
+                    <li class="cont "><img src="https://img.icons8.com/ios-filled/50/FFD034/github.png"/><a href="http://github.com/Vince-22/Epifleurs.git">    https://github.com/Vince-22/Epifleurs.git</a></li>
+                    <li class="cont "><img src="https://img.icons8.com/ios-filled/50/FFD034/linkedin-circled--v4.png"/><a href="http://linkedin.com/in/poirier-vincent-a701b81a8">    Poirier Vincent</a></li>
                 </ul>
                 </div>
                
             </div>
         </div>
-            <div class="fomation col-md-6">
+            <div class="formation col-md-6">
                 <ul>
                     <div id="formation">
-                        <h2>Formation</h2>
+                        <h2><strong>Formation</strong> </h2>
                     </div>
                     <li>->  Formation Développeur web et web mobile AFPA D'olivet 2021-2022</li>
                 <li>-> titre professionnel de niveau 4: contrôle essais, maintenance en mécanique  2019 </li>
                 <li>-> Baccalauréat série S  2013</li>
             </ul>
         </div>
-        <div class="experience col-md-6">
-            <ul>
+        <div class="col-md-6 experience ">
+        <div class="row justify-content-center ">
+            <div class="col-8">
+                <ul>
                 <div id="experience">
-                    <h2>Experiences</h2>
+                    <h2><strong>Expériences</strong> </h2>
                 </div>
                 <li>Sous-officier de l'armée de terre2013-2021 </li>
                 <li>-> mécanicien d’armes<li>
                     <li>-> responsable gestion de stock d’arme et d'équipements optiques</li>
                 </ul>
-                
+            </div>
+            
+            </div>
             </div>
             
             
@@ -119,7 +93,7 @@
             
 <div class="competences col-md-6 m-4">
     <div id="competences">
-        <h2>Compétences</h2>
+        <h2><strong>Compétences</strong> </h2>
     </div>
     <div class="java row mb-3">
         <div class="Nomcompetance mb-1 row">
@@ -248,47 +222,53 @@
     </div>
 </div>
 </div>
-<div class="projet mt-5">
-        <div id="projetPerso">
-            <h2>Projet Personnel</h2>
+<div class=" projet col">
+    <div class="row justify-content-end">
+        <div class="col-10">
+
+            <div id="projetPerso justify-content-center">
+                <h2><strong>Projet Personnel</strong> </h2>
+            </div>
+            <div class="portfolio">
+                <div class="image active" style="background: url(/images/devanture.png) center/cover;">
+                    <div class="text-container">
+                <div class="text">
+                    <h3>Epifleurs</h3>
+                    <p>Projet de site vitrine pour une amie gérante d'une épicerie multiservices <br><a href="indexEpifleurs.html"><input type="button" class="button" value="Explorer"></a></p>
+                    
+                </div>
+            </div>
         </div>
-</div>   
-<div class="portfolio">
-    <div class="image active" style="background: url(/images/devanture.png) center/cover;">
-        <div class="text-container">
-            <div class="text">
-                <h3>Epifleurs</h3>
-                <p>Projet de site vitrine pour une amie gérante d'une épicerie multiservices <br><a href="indexEpifleurs.html"><input type="button" class="button" value="Explorer"></a></p>
+        <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
+            <div class="text-container">
+                <div class="text">
+                    <h3>Coming soon</h3>
+                    <p></p>
+                </div>
                 
             </div>
         </div>
-    </div>
-    <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
-        <div class="text-container">
-            <div class="text">
-                <h3>Coming soon</h3>
-                <p></p>
-            </div>
-
-        </div>
-    </div>
-    <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
-        <div class="text-container">
-            <div class="text">
-                <h3>Coming soon</h3>
-                <p></p>
+        <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
+            <div class="text-container">
+                <div class="text">
+                    <h3>Coming soon</h3>
+                    <p></p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
-        <div class="text-container">
-            <div class="text">
-                <h3>Coming soon</h3>
-                <p></p>
+        <div class="image" style="background: url(/images/pexels-fernando-arcos-211122.jpg) center/cover;">
+            <div class="text-container">
+                <div class="text">
+                    <h3>Coming soon</h3>
+                    <p></p>
+                </div>
             </div>
         </div>
+        </div>
     </div>
+    
 </div>
+</div>   
   
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

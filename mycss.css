@@ -5,19 +5,19 @@
 
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 :root {
     --ff-primary : 'Source Sans Pro', sans-serif;
     --ff-secondary : 'Source Code Pro', monospace;
-    
+
     --fw-reg : 300;
     --fw-bold : 900;
-    
+
     --clr-light :#fff ;
     --clr-dark : #06327D;
     --clr-accent :#FFD034;
-    
+
     --fs-h1 : 3rem;
     --fs-h2 : 2.25rem;
     --fs-h3 : 1.25rem;
@@ -27,7 +27,7 @@
 header {
     display: flex;
     justify-content: space-between;
-  
+
 }
 .menu{
     display: block;
@@ -80,7 +80,7 @@ header {
     border: 0;
     cursor: pointer;
     position: fixed;
-    right: 1em;
+    right: 2em;
     top: 1em;
     z-index: 1000;
 }
@@ -132,7 +132,7 @@ header {
 
 .hamburger::before {top: 6px;}
 
-.hamburger::after{ bottom: 6px;} 
+.hamburger::after{ bottom: 6px;}
 /* css description---------------- */
 .photo{
     margin: 50px;
@@ -140,13 +140,18 @@ header {
     height: auto;
 }
 .entete{
-    text-align:start;
+    /* text-align:start; */
     border-radius: 5px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FFD034;
     height: auto;
-  
+    width: auto;
+
     background-color: #06327D;
+}
+.txtpresentation{
+    padding: 0;
+    box-sizing: border-box;
 }
 .entete p {
     font-size: 30px ;
@@ -177,15 +182,15 @@ li{
 }
 .contact a{
     color: black;
-    text-decoration: none;   
-    
+    text-decoration: none;
+
 }
 .contact{
     background-color:#06327d59;
     width: 100%;
     height: auto;
     margin-bottom: 100px;
-    font-size: x-large;
+    font-size: 1rem;
     padding: 4%;
     border-radius: 3px;
 }
@@ -210,7 +215,7 @@ h2{
     align-items: center;
 }
 /* css formation --------------*/
-.formation{ 
+.formation{
     padding: 5%;
     font-size: x-large;
 }
@@ -253,7 +258,7 @@ h2{
     background-color: #FFD034;
     margin-left: 10px ;
 }
-/*carouselle --------*/ 
+/*carouselle --------*/
 .projet{
     margin: 0;
     padding: 4%;
@@ -273,10 +278,11 @@ h2{
   display: flex;
   width: 75%;
   height: 400px;
- 
+
   align-items: center;
   box-sizing: border-box;
 }
+
 .image.active{
     flex-grow: 100;
     max-width: 600px;
@@ -293,7 +299,7 @@ h2{
     height: 400px;
     padding: 2rem;
     visibility: hidden;
-    transform: translateY(300px);
+    transform: translateY(100px);
     opacity: 0;
     transition: all .4s ease;
     background: linear-gradient(354deg,black 0%,transparent 72%);
@@ -313,4 +319,81 @@ h2{
     border-radius: 10px;
     opacity: 0.7;
     background-color:aliceblue;
+}
+
+/*Small device*/
+
+/* @media screen and (max-width:400px){
+    .portfolio,.image{
+        min-width: 21.5rem;
+        max-width: 10rem;
+        height: 10.063rem;
+        box-sizing: border-box;
+    }
+    
+} */
+@media screen and (max-width:430px){
+    .projet{
+        margin: 0;
+        padding: 4%;
+        background-color:#06327d59;
+        border-radius: 3px;
+        }
+    
+    .image{
+        min-width: 80%;
+        margin: 10px;
+        cursor: pointer;
+        transition: .5s cubic-bezier(0.05,0.61,0.41,0.95);
+        overflow: hidden;
+        position: relative;
+    }
+    .portfolio{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    
+      align-items: center;
+      box-sizing: border-box;
+    }
+    
+    .image.active{
+        flex-grow: 100;
+        height: auto;
+        margin: 0px;
+        border-radius: 7px;
+        background-size: auto 100%;
+    }
+    .image:not(.active){
+        flex-grow: 1;
+        height: 5rem;
+        border-radius: 5px;
+    }
+    .text-container{
+        width: 100%;
+        height: 400px;
+        padding: 2rem;
+        visibility: hidden;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: all .4s ease;
+        background: linear-gradient(354deg,black 0%,transparent 72%);
+        color: white;
+        overflow: hidden;
+    }
+    .text{
+        position: absolute;
+        bottom: 5rem;
+    }
+    .active .text-container{
+        visibility: visible;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    .button{
+        border-radius: 10px;
+        opacity: 0.7;
+        background-color:aliceblue;
+    }
 }

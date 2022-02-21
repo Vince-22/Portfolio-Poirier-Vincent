@@ -4,10 +4,9 @@
 
 
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-
 :root {
     --ff-primary : 'Source Sans Pro', sans-serif;
     --ff-secondary : 'Source Code Pro', monospace;
@@ -24,38 +23,20 @@
     --fs-h3 : 1.25rem;
     --fs-body : 1rem;
 }
-/* css menu---------*/
-/* .navbar{
-    z-index: 1;
-    position: -webkit-sticky;
-position: sticky;
-top : 0.1px
-}
-.menu{
-    list-style: none;
-    text-decoration: none;
-    color: #FFD034;
-    margin-right: 20px;
-    border-radius: 5px;
-    padding: 1px;
-}
-.menuglobale{
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    align-items: center;
-    justify-content: center;
-    background-color: #06327D;
-    display: flex;
-    flex-direction: row;
-}
-.menu:hover{
-    background-color: #FFD034;
-    color: #06327D;
-} */
+
 header {
     display: flex;
     justify-content: space-between;
   
+}
+.menu{
+    display: block;
+    position: relative;
+    background: var(--clr-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
 }
 .nav {
     position: fixed;
@@ -164,7 +145,7 @@ header {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     color: #FFD034;
     height: auto;
-   margin-bottom: 50px;
+  
     background-color: #06327D;
 }
 .entete p {
@@ -189,7 +170,7 @@ header {
 /* css contact -----------*/
 
 .contact h2 {
-    margin-left: 100px;
+    margin-left: 20%;
 }
 li{
     list-style: none;
@@ -197,6 +178,16 @@ li{
 .contact a{
     color: black;
     text-decoration: none;   
+    
+}
+.contact{
+    background-color:#06327d59;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    font-size: x-large;
+    padding: 4%;
+    border-radius: 3px;
 }
 h2{
     text-decoration: underline;
@@ -207,10 +198,30 @@ h2{
 .cont :hover{
    color: #FFD034;
 }
+/* css expériences ------------*/
+.experience{
+    background-color: #fdeeba;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    font-size: x-large;
+    padding: 4%;
+    border-radius: 3px;
+    align-items: center;
+}
+/* css formation --------------*/
+.formation{ 
+    padding: 5%;
+    font-size: x-large;
+}
 /* css competences -----------*/
-
+.competences{
+    padding: 5%;
+    font-size: x-large;
+}
 .Nomcompetance{
     align-items: center;
+    font-size: x-large;
 }
 .barre1{
     height:5px;
@@ -243,8 +254,15 @@ h2{
     margin-left: 10px ;
 }
 /*carouselle --------*/ 
+.projet{
+    margin: 0;
+    padding: 4%;
+    background-color:#06327d59;
+    border-radius: 3px;
+    }
+
 .image{
-  min-width: 60px;
+    min-width: 60px;
     margin: 10px;
     cursor: pointer;
     transition: .5s cubic-bezier(0.05,0.61,0.41,0.95);
@@ -255,8 +273,9 @@ h2{
   display: flex;
   width: 75%;
   height: 400px;
-  margin: 50px;
+ 
   align-items: center;
+  box-sizing: border-box;
 }
 .image.active{
     flex-grow: 100;

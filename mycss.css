@@ -321,17 +321,7 @@ h2{
     background-color:aliceblue;
 }
 
-/*Small device*/
 
-/* @media screen and (max-width:400px){
-    .portfolio,.image{
-        min-width: 21.5rem;
-        max-width: 10rem;
-        height: 10.063rem;
-        box-sizing: border-box;
-    }
-    
-} */
 @media screen and (max-width:430px){
     .projet{
         margin: 0;
@@ -409,5 +399,8 @@ h2{
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+#competences{
+text-align: center;
 }
 }

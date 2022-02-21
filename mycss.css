@@ -5,7 +5,6 @@
 
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 :root {
     --ff-primary : 'Source Sans Pro', sans-serif;
@@ -146,7 +145,7 @@ header {
     color: #FFD034;
     height: auto;
     width: auto;
-
+    padding: 6%;
     background-color: #06327D;
 }
 .txtpresentation{
@@ -155,11 +154,11 @@ header {
 }
 .entete p {
     font-size: 30px ;
-    margin-left: 10px;
+    
 }
 .entete span{
     font-size: 20px;
-    margin-left: 20px;
+    
 }
 #stage{
     font-size: 25px;
@@ -174,8 +173,9 @@ header {
 
 /* css contact -----------*/
 
-.contact h2 {
-    margin-left: 20%;
+h2 {
+    text-align: center;
+    margin: 5rem;
 }
 li{
     list-style: none;

@@ -386,6 +386,9 @@ h2{
         position: absolute;
         bottom: 5rem;
     }
+    .text p{
+        margin-right: 10%;
+    }
     .active .text-container{
         visibility: visible;
         transform: translateX(0px);

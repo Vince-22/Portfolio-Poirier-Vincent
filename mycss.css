@@ -135,8 +135,8 @@ header {
 .hamburger::after{ bottom: 6px;}
 /* css description---------------- */
 .photo{
-    margin: 50px;
-    width: 80%;
+    margin: 20px;
+    width: 60%;
     height: auto;
 }
 .entete{

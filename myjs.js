@@ -1,7 +1,10 @@
+AOS.init();
+
+// JS menu burger ///
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
-AOS.init();
 $(".image").click(function(){
     $(".image").removeClass("active");
     $(this).addClass("active")

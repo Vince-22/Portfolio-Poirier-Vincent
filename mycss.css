@@ -75,7 +75,7 @@
     border: 0;
     cursor: pointer;
     position: fixed;
-    right: 2em;
+    right: 0.5em;
     top: 1em;
     z-index: 1000;
 }
@@ -323,6 +323,13 @@ h2{
 @media only screen and (max-width:576px) {
     .portfolio {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:426px) {
+    .nav-toggle{
+    right: 0.5em;
+        top: 2.5em;
     }
 }
 

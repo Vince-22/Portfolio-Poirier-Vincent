@@ -181,7 +181,6 @@ li{
     background-color:#06327d59;
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
     font-size: 1rem;
     padding: 4%;
     border-radius: 3px;
@@ -213,8 +212,14 @@ h2{
 }
 /* css competences -----------*/
 .competences{
+    display: flex;
+    flex-direction: row;
     padding: 5%;
     font-size: x-large;
+}
+.java{
+
+    justify-items: center;
 }
 .Nomcompetance{
     align-items: center;

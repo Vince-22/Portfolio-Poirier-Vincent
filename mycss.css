@@ -14,7 +14,7 @@
     --fw-bold : 900;
 
     --clr-light :#fff ;
-    --clr-dark : #06327D;
+    --clr-dark : #2c497c;
     --clr-accent :#FFD034;
 
     --fs-h1 : 3rem;
@@ -213,7 +213,7 @@ h2{
 /* css competences -----------*/
 .competences{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5%;
     font-size: x-large;
 }
@@ -337,4 +337,18 @@ h2{
 .row {
     padding: 0;
     margin: 0;
+}
+@media only screen and (max-width:950px) {
+    .formation{
+        font-size: 0.9em;
+    }
+    .experience{
+        font-size: 0.9em;
+    }
+}
+@media  only screen and (max-width:600px) {
+    .entete{
+        flex-direction: column;
+        align-items: center;
+    }
 }
